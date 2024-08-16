@@ -1,0 +1,173 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling for a modern look */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Full-screen container with centered content */
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styling */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.05);
+}
+
+/* Weather container styling */
+.weather_container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather_container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Temperature display */
+.temperature {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Time and location styling */
+.time_location {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Weather condition styling */
+.weather_condition {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+/* Navigation styling */
+nav {
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* Form styling to structure input and button */
+nav form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Search field styling */
+.search_field {
+    padding: 0.75rem 1rem;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 1.25rem;
+    border-bottom: 2px solid white;
+    width: 100%;
+    transition: border-color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.search_field::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search_field:focus {
+    border-color: #00d2ff;
+    transform: scale(1.05);
+}
+
+/* Search button styling */
+nav form button {
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: #1e3c72;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+nav form button:hover {
+    background-color: #00d2ff;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .temperature {
+        font-size: 60px;
+    }
+
+    .time_location {
+        font-size: 1.25rem;
+    }
+
+    .search_field {
+        font-size: 1rem;
+    }
+
+    nav form button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .footer {
+        font-size: 0.75rem;
+    }
+}
